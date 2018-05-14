@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67e51ec6-f956-44fd-84b3-e52173e327d7" name="Default" comment="new_folder">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/price.html" afterPath="$PROJECT_DIR$/html/price.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +15,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.4689864">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/html/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+                <state relative-caret-position="18">
+                  <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
                   <folding>
                     <element signature="e#2385#2391#1" expanded="true" />
                     <element signature="e#2705#2711#1" expanded="true" />
@@ -32,11 +31,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="price.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="price.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/html/price.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="33" column="10" lean-forward="false" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+                <state relative-caret-position="324">
+                  <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -49,8 +48,8 @@
           <file leaf-file-name="main_styles.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/html/css/main_styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="18">
-                  <caret line="392" column="0" lean-forward="false" selection-start-line="392" selection-start-column="0" selection-end-line="392" selection-end-column="0" />
+                <state relative-caret-position="126">
+                  <caret line="398" column="0" lean-forward="true" selection-start-line="398" selection-start-column="0" selection-end-line="398" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -117,8 +116,8 @@
         <option value="$PROJECT_DIR$/html/css/arrow.css" />
         <option value="$PROJECT_DIR$/html/css/main_styles.css" />
         <option value="$PROJECT_DIR$/html/css/price_styles.css" />
-        <option value="$PROJECT_DIR$/html/price.html" />
         <option value="$PROJECT_DIR$/html/index.html" />
+        <option value="$PROJECT_DIR$/html/price.html" />
       </list>
     </option>
   </component>
@@ -222,6 +221,7 @@
       <workItem from="1526304026709" duration="356000" />
       <workItem from="1526304486415" duration="3744000" />
       <workItem from="1526308773726" duration="97000" />
+      <workItem from="1526308964761" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="new_folder">
       <created>1525269802159</created>
@@ -234,7 +234,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36054000" />
+    <option name="totallyTimeSpent" value="36070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -683,14 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/price.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="33" column="10" lean-forward="false" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/css/price_styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -701,16 +693,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/css/main_styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="392" column="0" lean-forward="false" selection-start-line="392" selection-start-column="0" selection-end-line="392" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="398" column="0" lean-forward="true" selection-start-line="398" selection-start-column="0" selection-end-line="398" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="18">
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
             <element signature="e#2385#2391#1" expanded="true" />
             <element signature="e#2705#2711#1" expanded="true" />
@@ -718,6 +710,14 @@
             <element signature="e#3120#3126#1" expanded="true" />
             <element signature="e#3177#3183#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/price.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
