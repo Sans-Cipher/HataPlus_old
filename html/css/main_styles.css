@@ -90,7 +90,6 @@ span, .tel{
     top: 0;
 }
 
-
 .skype:before {
     content:"";
     display: inline-block;
@@ -128,13 +127,10 @@ nav a:hover {
     color: #fd8300;
 }
 
-
 nav a {
     text-decoration: none;
     color: #afafd0;
 }
-
-
 
 .social {
     min-width: 10%;
@@ -152,18 +148,10 @@ nav a:hover, .links_1 a:hover, .links_2 a:hover {
 .contacts p, footer p {
     line-height: 30px;
 }
-/*
-img {
-    height: auto;
-    min-width: 210px;
-    object-fit: contain;
-}*/
 
 .tels p, .footTels p {
     font: bold 18px/30px Arial, sans-serif;
 }
-
-
 
 .contacts, .menu, .soc, footer .resize {
     display: flex;
@@ -175,7 +163,6 @@ img {
     align-items: center;
     padding: 35px 0;
 }
-
 
 footer {
     background-color: #ededf4;
@@ -195,7 +182,6 @@ footer {
 .tels, .emailSkype, .orderCall {
     padding-left: 30px;
 }
-
 
 @media screen and (max-width: 1125px){
     .figures {
@@ -301,7 +287,6 @@ footer {
     background-color: #242455;
 }
 
-
 .orderCall input {
     background: none;
     border: solid 2px #fd8300;
@@ -315,7 +300,6 @@ footer {
     background-color: #fd8300;
     color: #fff;
 }
-
 
 .Contacts > div {
     display: inline-block;
@@ -404,7 +388,7 @@ h2 {
 
 h3 {
     font: bold 24px "Roboto Slab", serif;
-    margin: 0;
+    margin-bottom: 10px;
 }
 
 hr {
@@ -461,6 +445,7 @@ aside {
 
 aside ul {
     width: 230px;
+    padding: 0;
 }
 
 aside li {
@@ -488,28 +473,6 @@ aside>ul>li:last-child {
 aside>ul>li:not(:first-child):hover {
     background-color: #fd8300;
     color: #fff;
-}
-
-aside>ul>li:not(:first-child):after {
-    content: "";
-    position: absolute;
-    display: block;
-    background: url("../images/arrow.png") no-repeat;
-    width: 6px;
-    height: 10px;
-    top: 20px;
-    left: 210px;
-}
-
-aside>ul>li:not(:first-child):hover:after {
-    content: "";
-    position: absolute;
-    display: block;
-    background: url("../images/arrow_hov.png") no-repeat;
-    width: 10px;
-    height: 6px;
-    top: 20px;
-    left: 207px;
 }
 
 .hidden_list {
