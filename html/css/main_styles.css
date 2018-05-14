@@ -1,0 +1,541 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Arial", serif;
+    margin: 0;
+    cursor: url("../images/cursor.cur"), auto;
+}
+
+p {
+    margin: 0
+}
+
+li {
+    list-style: none;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.resize {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+/*header-footer styles start*/
+#hamburger {
+    display: none;
+}
+
+.menu {
+    padding-left: 0;
+}
+
+.social a {
+    display: inline-block;
+}
+
+.social li {
+    padding-left: 20px;
+}
+
+.social .fb a {
+    width: 12px;
+    height: 18px;
+    background: url("../images/spriteWhite.png") no-repeat 41%;
+}
+
+.social .fb a:hover {
+    background: url("../images/spriteOrange.png") no-repeat 41%;
+}
+
+.social .tw a {
+    width: 17px;
+    height: 18px;
+    background: url("../images/spriteWhite.png") no-repeat -1%;
+}
+
+.social .tw a:hover {
+    background: url("../images/spriteOrange.png") no-repeat -1%;
+}
+
+.social .in a {
+    width: 18px;
+    height: 18px;
+    background: url("../images/spriteWhite.png") no-repeat 21%;
+}
+
+.social .in a:hover {
+    background: url("../images/spriteOrange.png") no-repeat 21%;
+}
+
+span, .tel{
+    position: relative;
+
+}
+
+.mail:before {
+    content:"";
+    display: inline-block;
+    position: absolute;
+    height:18px;
+    width: 17px;
+    background: url("../images/spriteOrange.png") 117px ;
+    pointer-events: none;
+    left: -25px;
+    top: 0;
+}
+
+
+.skype:before {
+    content:"";
+    display: inline-block;
+    position: absolute;
+    height:18px;
+    width: 19px;
+    background: url("../images/spriteOrange.png") 136px ;
+    pointer-events: none;
+    left: -25px;
+    top: 0;
+}
+
+.tel:before {
+    content:"";
+    display: inline-block;
+    position: absolute;
+    height:18px;
+    width: 17px;
+    background: url("../images/spriteOrange.png") 153px ;
+    pointer-events: none;
+    left: -25px;
+    top: 0;
+}
+
+nav {
+    min-width: 50%;
+    float: left;
+}
+
+nav a {
+    color: #afafd0;
+}
+
+nav a:hover {
+    color: #fd8300;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #afafd0;
+}
+
+
+
+.social {
+    min-width: 10%;
+    float: right;
+}
+
+.social a {
+    color: transparent;
+}
+
+nav a:hover, .links_1 a:hover, .links_2 a:hover {
+    color: #fd8300;
+}
+
+.contacts p, footer p {
+    line-height: 30px;
+}
+/*
+img {
+    height: auto;
+    min-width: 210px;
+    object-fit: contain;
+}*/
+
+.tels p, .footTels p {
+    font: bold 18px/30px Arial, sans-serif;
+}
+
+
+
+.contacts, .menu, .soc, footer .resize {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacts {
+    align-items: center;
+    padding: 35px 0;
+}
+
+
+footer {
+    background-color: #ededf4;
+    padding-top: 20px;
+}
+
+.footTels, .email_skype {
+    padding-left: 30px;
+}
+
+.links_1 a, .links_2 a {
+    text-decoration: none;
+    font: normal 14px/26px Arial, sans-serif;
+    color: #666666;
+}
+
+.tels, .emailSkype, .orderCall {
+    padding-left: 30px;
+}
+
+
+@media screen and (max-width: 1125px){
+    .figures {
+        display: block;
+    }
+    .resize {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .orderCall {
+        padding-left: 40%;
+    }
+    .menu li {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    /*hamburger menu and footer*/
+    .contacts {
+        padding: 5px 0;
+    }
+
+    .contacts div{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .orderCall {
+        padding: 0 ;
+
+    }
+    nav {
+        position: relative;
+    }
+
+    .menu {
+        display: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .menu {
+        background-color: rgba(36, 36, 85, 0.8);
+        z-index: 1;
+        position: absolute;
+        top: 34px;
+        left: 0;
+    }
+
+    .menu li {
+        font: bold 30px/70px Arial, sans-serif;
+
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #hamburger:checked ~ .menu {
+        display: block;
+        position: absolute;
+        top: 54px;
+        min-width: 280px;
+        padding-left: 15px;
+
+    }
+
+    .hamburger label {
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .hamburger label:before {
+        content: "";
+        position: absolute;
+        top: 18px;
+        left: 10px;
+        width: 1em;
+        height: 0.15em;
+        background: white;
+        box-shadow: 0 0.25em 0 0 white,
+        0 0.5em 0 0 white;
+        transform: scale(2);
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contacts div {
+        margin: 0 auto;
+        float: none;
+        max-width: 100%;
+
+    }
+}
+
+.panel {
+    background-color: #242455;
+}
+
+
+.orderCall input {
+    background: none;
+    border: solid 2px #fd8300;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font: bold 16px Arial, sans-serif;
+
+}
+
+.orderCall input:hover {
+    background-color: #fd8300;
+    color: #fff;
+}
+
+
+.Contacts > div {
+    display: inline-block;
+    width: 30%;
+}
+
+.rekvizit {
+    width: 49%;
+}
+
+#map {
+    height: 400px;
+    width: 50%;
+}
+
+.bottom p {
+    background-color: #dbdbe4;
+    color: #9999a6;
+    text-align: center;
+    font: normal 13px/45px Arial, sans-serif;
+
+}
+
+/*header-footer styles end*/
+
+.proposal {
+    text-align: center;
+    background: url("../images/proposal.jpg") no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+    margin: 0 auto 45px auto;
+    min-height: 140px;
+}
+
+.proposal p {
+    margin: 0;
+}
+
+.proposal p:first-child {
+    font: bold 30px "Roboto Slab", serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.proposal p:nth-child(2) {
+    font: normal 14px "Arial", sans-serif;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.proposal p:last-child {
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    color: #fd8300;
+}
+
+.proposal p:last-child b {
+    font-size: 40px;
+}
+
+.proposal p:last-child {
+    font-size: 24px;
+}
+
+.main {
+    width: 70%;
+    float: left;
+    margin: 0 10px;
+}
+
+menu {
+    padding: 0;
+    margin: 0;
+}
+
+aside li {
+    list-style: none;
+    background: #e4e4ec;
+    padding: 16px;
+}
+
+h2 {
+    font: bold 30px "Roboto Slab", serif;
+    margin: 0;
+}
+
+h3 {
+    font: bold 24px "Roboto Slab", serif;
+    margin: 0;
+}
+
+hr {
+    height: 1px;
+    background-color: #e4e4ec;
+    border: none;
+}
+
+.blabla p {
+    margin: 0;
+    font: normal 14px "Arial", sans-serif;
+    color: #666;
+}
+
+.blabla a {
+    color: #fd8300;
+    font: bold 14px "Arial", sans-serif;
+}
+
+.figures {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+figcaption {
+    margin: 10px 0;
+    font: bold 14px "Arial", sans-serif;
+    color: #1f1f56;
+}
+
+figcaption:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+    font: 13px "Arial", sans-serif;
+    color: #9999a6;
+    line-height: 16px;
+}
+
+figure:nth-child(2) {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+aside {
+    width: 230px;
+    float: right;
+}
+
+aside ul {
+    width: 230px;
+}
+
+aside li {
+    font: 14px "Arial", sans-serif;
+    position: relative;
+}
+
+aside>ul>li:first-child {
+    font: bold 16px "Roboto Slab", serif;
+    background-color: #242455;
+    color: #fff;
+    border: 1px #242455 solid;
+    border-radius: 3px;
+}
+
+aside>ul>li:not(:last-child) {
+    border-bottom: 1px #cecedd solid;
+}
+
+aside>ul>li:last-child {
+    border: 1px #e4e4ec solid;
+    border-radius: 3px;
+}
+
+aside>ul>li:not(:first-child):hover {
+    background-color: #fd8300;
+    color: #fff;
+}
+
+aside>ul>li:not(:first-child):after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url("../images/arrow.png") no-repeat;
+    width: 6px;
+    height: 10px;
+    top: 20px;
+    left: 210px;
+}
+
+aside>ul>li:not(:first-child):hover:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url("../images/arrow_hov.png") no-repeat;
+    width: 10px;
+    height: 6px;
+    top: 20px;
+    left: 207px;
+}
+
+.hidden_list {
+    display: none;
+    background-color: #e4e4ec;
+    padding: 0;
+}
+
+.hidden_list li {
+    color: #666;
+}
+
+.hidden_list li:hover {
+   background-color: #cecedd;
+}
+
+aside>ul>li:nth-child(3):hover .hidden_list {
+    display: block;
+    margin-top: 16px;
+    margin-left: -16px;
+    margin-bottom: -16px;
+}
+
+@media screen and (max-width: 950px) {
+    aside {
+        float: none;
+        margin: 0 auto;
+    }
+}
