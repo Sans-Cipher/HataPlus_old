@@ -8,7 +8,7 @@
     <title>Title</title>
 </head>
 <body>
-<header class="clear">
+<header class="clear shadow">
     <div class="panel clear">
         <div class="resize">
             <nav>
@@ -55,7 +55,7 @@
     </div>
 </header>
 <div class="clear"></div>
-<div class="Contacts resize">
+<div class="Contacts resize clear">
     <h3>Контакти</h3>
     <div class="office">
         <h4>Наш офіс</h4>
@@ -80,15 +80,14 @@
             <p>Банк ХФ ПАТ КБ «ПРИВАТБАНК»</p>
 
     </div>
-    <div id="map"></div>
-        <!--<iframe
-                width="600"
-                height="450"
-                frameborder="0" style="border:0"
+</div>
+    <div class="clear resize">
+        <div class="map">
+        <iframe
                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2NuUn3dM5jHIY6FH3XZnkJiVRhqeAhR0
     &q=Space+Needle,@49.4093084,26.9507761,16.25z" allowfullscreen>
-        </iframe>-->
-        <script>
+        </iframe>
+  <!--      <script>
             function initMap() {
                 var uluru = {lat: -25.363, lng: 131.044};
                 var map = new google.maps.Map(document.getElementById('map'), {
@@ -103,10 +102,26 @@
         </script>
         <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2NuUn3dM5jHIY6FH3XZnkJiVRhqeAhR0&callback=initMap">
-        </script>
+        </script>-->
+        </div>
 
     <div class="back">
-
+        <h4>Форма зворотнього зв’язку</h4>
+        <form action="">
+            <label>
+                <input class="name" name="name" type="text" placeholder="Ваше ім’я">
+            </label>
+            <label>
+                <input class="phone" name="phone" type="text" placeholder="Телефон">
+            </label>
+            <label>
+                <input class="subject" name="subject" type="text" placeholder="Тема повідомлення">
+            </label>
+            <textarea placeholder="Текст"></textarea>
+            <input type="submit" value="Відправити">
+            <input id="news" type="checkbox">
+            <label for="news">Я бажаю отримувати останні новини</label>
+        </form>
     </div>
 </div>
 <footer>
