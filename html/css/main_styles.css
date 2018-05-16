@@ -308,20 +308,6 @@ footer {
     color: #fff;
 }
 
-.Contacts > div {
-    display: inline-block;
-    width: 30%;
-}
-
-.rekvizit {
-    width: 49%;
-}
-
-#map {
-    height: 400px;
-    width: 50%;
-}
-
 .bottom p {
     background-color: #dbdbe4;
     color: #9999a6;
