@@ -1,0 +1,27 @@
+.Contacts h4 {
+	font: bold 14px "Roboto Slab", serif;
+	margin-top: 0;
+}
+
+.Contacts div  {
+	font-size: 14px;
+}
+
+.Contacts ._tel {
+	font: bold 18px/30px Arial, sans-serif;
+}
+
+
+.Contacts  div {
+	display: inline-block;
+	width: 25%;
+}
+
+.Contacts .rekvizit {
+	width: 49%;
+}
+
+#map {
+	height: 400px;
+	width: 50%;
+}
