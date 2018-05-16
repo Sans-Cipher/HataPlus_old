@@ -363,17 +363,6 @@ footer {
     margin: 0 10px;
 }
 
-menu {
-    padding: 0;
-    margin: 0;
-}
-
-aside li {
-    list-style: none;
-    background: #e4e4ec;
-    padding: 16px;
-}
-
 h2 {
     font: bold 30px "Roboto Slab", serif;
     margin: 0;
@@ -444,6 +433,9 @@ aside ul {
 aside li {
     font: 14px "Arial", sans-serif;
     position: relative;
+    list-style: none;
+    background: #e4e4ec;
+    padding: 16px 0px;
 }
 
 aside>ul>li:first-child {
@@ -454,7 +446,7 @@ aside>ul>li:first-child {
     border-radius: 3px;
 }
 
-aside>ul>li:not(:last-child) {
+.afters {
     border-bottom: 1px #cecedd solid;
 }
 
@@ -463,9 +455,34 @@ aside>ul>li:last-child {
     border-radius: 3px;
 }
 
-aside>ul>li:not(:first-child):hover {
+.afters:hover {
     background-color: #fd8300;
     color: #fff;
+}
+
+.afters:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 1px #666 solid;
+    border-right: 1px #666 solid;
+    transform: rotate(45deg);
+    width: 7px;
+    height: 7px;
+    top: 20px;
+    left: 210px;
+}
+
+.afters:hover:after {
+    content: "";
+    position: absolute;
+    border-top: 1px #fff solid;
+    border-right: 1px #fff solid;
+    width: 7px;
+    height: 7px;
+    transform: rotate(135deg);
+    top: 20px;
+    left: 210px;
 }
 
 .hidden_list {
@@ -485,13 +502,33 @@ aside>ul>li:not(:first-child):hover {
 aside>ul>li:nth-child(3):hover .hidden_list {
     display: block;
     margin-top: 16px;
-    margin-left: -16px;
     margin-bottom: -16px;
 }
 
 @media screen and (max-width: 950px) {
     aside {
         float: none;
-        margin: 0 auto;
+        width: 100%;
+    }
+
+    aside>ul {
+        width: 100%;
+    }
+
+    aside>ul>li {
+        text-align: center;
+    }
+
+    .afters:after {
+        left: 550px;
+    }
+
+    .afters:hover:after {
+        left: 550px;
+    }
+
+    .hidden_list {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
