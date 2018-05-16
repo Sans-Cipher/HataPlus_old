@@ -27,6 +27,12 @@ li {
 }
 
 /*header-footer styles start*/
+.panel {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
 #hamburger {
     display: none;
 }
@@ -161,7 +167,8 @@ nav a:hover, .links_1 a:hover, .links_2 a:hover {
 
 .contacts {
     align-items: center;
-    padding: 35px 0;
+    padding: 85px 0 35px;
+
 }
 
 footer {
@@ -204,7 +211,7 @@ footer {
 @media screen and (max-width: 690px) {
     /*hamburger menu and footer*/
     .contacts {
-        padding: 5px 0;
+        padding: 65px 0 5px;
     }
 
     .contacts div{
@@ -227,7 +234,7 @@ footer {
 
     .menu {
         background-color: rgba(36, 36, 85, 0.8);
-        z-index: 1;
+        z-index: 2;
         position: absolute;
         top: 34px;
         left: 0;
@@ -256,7 +263,7 @@ footer {
         width: 2em;
         height: 2em;
         cursor: pointer;
-        z-index: 1;
+        z-index: 2;
     }
 
     .hamburger label:before {
@@ -270,7 +277,7 @@ footer {
         box-shadow: 0 0.25em 0 0 white,
         0 0.5em 0 0 white;
         transform: scale(2);
-        z-index: 2;
+        z-index: 3;
     }
 }
 
