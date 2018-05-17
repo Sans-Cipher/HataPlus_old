@@ -33,6 +33,7 @@ li {
     z-index: 1;
 
 }
+
 #hamburger {
     display: none;
 }
@@ -79,42 +80,42 @@ li {
     background: url("../images/spriteOrange.png") no-repeat 21%;
 }
 
-span, .tel{
+span, .tel {
     position: relative;
 
 }
 
 .mail:before {
-    content:"";
+    content: "";
     display: inline-block;
     position: absolute;
-    height:18px;
+    height: 18px;
     width: 17px;
-    background: url("../images/spriteOrange.png") 117px ;
+    background: url("../images/spriteOrange.png") 117px;
     pointer-events: none;
     left: -25px;
     top: 0;
 }
 
 .skype:before {
-    content:"";
+    content: "";
     display: inline-block;
     position: absolute;
-    height:18px;
+    height: 18px;
     width: 19px;
-    background: url("../images/spriteOrange.png") 136px ;
+    background: url("../images/spriteOrange.png") 136px;
     pointer-events: none;
     left: -25px;
     top: 0;
 }
 
 .tel:before {
-    content:"";
+    content: "";
     display: inline-block;
     position: absolute;
-    height:18px;
+    height: 18px;
     width: 17px;
-    background: url("../images/spriteOrange.png") 153px ;
+    background: url("../images/spriteOrange.png") 153px;
     pointer-events: none;
     left: -25px;
     top: 0;
@@ -190,10 +191,11 @@ footer {
     padding-left: 30px;
 }
 
-@media screen and (max-width: 1125px){
+@media screen and (max-width: 1125px) {
     .figures {
         display: block;
     }
+
     .resize {
         width: 90%;
     }
@@ -203,6 +205,7 @@ footer {
     .orderCall {
         padding-left: 40%;
     }
+
     .menu li {
         padding-right: 10px;
     }
@@ -214,14 +217,16 @@ footer {
         padding: 65px 0 5px;
     }
 
-    .contacts div{
+    .contacts div {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
     .orderCall {
-        padding: 0 ;
+        padding: 0;
 
     }
+
     nav {
         position: relative;
     }
@@ -329,9 +334,9 @@ footer {
     font: normal 13px/45px Arial, sans-serif;
 
 }
-
 /*header-footer styles end*/
 
+/*main_styles*/
 .proposal {
     text-align: center;
     background: url("../images/proposal.jpg") no-repeat;
@@ -452,7 +457,7 @@ aside li {
     padding: 16px 0px;
 }
 
-aside>ul>li:first-child {
+aside > ul > li:first-child {
     font: bold 16px "Roboto Slab", serif;
     background-color: #242455;
     color: #fff;
@@ -464,7 +469,7 @@ aside>ul>li:first-child {
     border-bottom: 1px #cecedd solid;
 }
 
-aside>ul>li:last-child {
+aside > ul > li:last-child {
     border: 1px #e4e4ec solid;
     border-radius: 3px;
 }
@@ -510,10 +515,10 @@ aside>ul>li:last-child {
 }
 
 .hidden_list li:hover {
-   background-color: #cecedd;
+    background-color: #cecedd;
 }
 
-aside>ul>li:nth-child(3):hover .hidden_list {
+aside > ul > li:nth-child(3):hover .hidden_list {
     display: block;
     margin-top: 16px;
     margin-bottom: -16px;
@@ -525,11 +530,11 @@ aside>ul>li:nth-child(3):hover .hidden_list {
         width: 100%;
     }
 
-    aside>ul {
+    aside > ul {
         width: 100%;
     }
 
-    aside>ul>li {
+    aside > ul > li {
         text-align: center;
     }
 
@@ -546,3 +551,136 @@ aside>ul>li:nth-child(3):hover .hidden_list {
         box-sizing: border-box;
     }
 }
+
+/*main_styles*/
+
+/*price_styles*/
+.box_shadow {
+    box-shadow: 0px 5px 10px -6px rgba(50, 50, 50, 0.75);
+}
+
+.price_h3 {
+    font: bold 24px "Roboto Slab", serif;
+    color: #24242b;
+    line-height: 20px;
+}
+
+.price_p {
+    margin: 0;
+    font: normal 14px "Arial", sans-serif;
+    color: #666;
+}
+
+.price .price_p {
+    line-height: 25px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+@media screen and (max-width: 600px) {
+    .table {
+        overflow-x: scroll;
+    }
+}
+
+.table {
+    margin: 30px 0;
+}
+
+thead {
+    background-color: #1f1f56;
+    color: #fff;
+    font: bold 14px "Roboto Slab", serif;
+}
+
+tbody {
+    background-color: #e4e4ec;
+    color: #666;
+    font: normal 14px "Arial", sans-serif;
+}
+
+tbody td {
+    border-top: 1px #cecedd solid;
+}
+
+td {
+    padding: 15px 20px;
+}
+
+tbody tr:hover {
+    background-color: #fd8300;
+    color: #fff;
+}
+
+thead tr td:first-child {
+    border-top-left-radius: 3px;
+}
+
+thead tr td:last-child {
+    border-top-right-radius: 3px;
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+thead tr td:last-child,
+tbody tr td:last-child {
+    text-align: right;
+    min-width: 65px;
+    padding: 1% 3%;
+}
+
+.hyperlink {
+    display: block;
+    margin: 30px 0;
+    color: #fd8300;
+    font: bold 14px "Arial", sans-serif;
+}
+
+.price_figures {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.price_figures figure {
+    margin: 0 0 10px 0;
+}
+
+.price_figures figure:first-child,
+.price_figures figure:nth-child(2),
+.price_figures figure:nth-child(3),
+.price_figures figure:last-child {
+    margin-right: 10px;
+}
+
+.price_figures figcaption {
+    font: bold 14px "Arial", sans-serif;
+    color: #1f1f56;
+    line-height: 24px;
+}
+
+.price_figures figcaption b {
+    text-transform: uppercase;
+}
+
+.price_figures figcaption:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.price_figures .price_p {
+    font-size: 13px;
+}
+/*price_styles*/
