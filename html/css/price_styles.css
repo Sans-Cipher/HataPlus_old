@@ -1,15 +1,8 @@
-@charset "UTF-8";
-
-body {
-    font-family: "Arial", sans-serif;
-    margin: 0;
-}
-
 .box_shadow {
     box-shadow: 0px 5px 10px -6px rgba(50, 50, 50, 0.75);
 }
 
-h3 {
+.price_h3 {
     font: bold 24px "Roboto Slab", serif;
     color: #24242b;
     line-height: 20px;
@@ -94,12 +87,6 @@ tbody tr td:last-child {
     margin: 30px 0;
     color: #fd8300;
     font: bold 14px "Arial", sans-serif;
-}
-
-hr {
-    background-color: #e4e4ec;
-    border: none;
-    height: 1px;
 }
 
 .price_figures {
