@@ -10,6 +10,7 @@
     font-style: normal;
 }
 
+/*common styles*/
 body {
     font-family: "Arial", serif;
     margin: 0;
@@ -45,13 +46,13 @@ li {
     margin: 0 auto;
     max-width: 1280px;
 }
+/*common styles*/
 
-/*header-footer styles start*/
+/*header-footer styles*/
 .panel {
     position: fixed;
     width: 100%;
     z-index: 1;
-
 }
 
 #hamburger {
@@ -102,7 +103,6 @@ li {
 
 span, .tel {
     position: relative;
-
 }
 
 .mail:before {
@@ -189,7 +189,6 @@ nav a:hover, .links_1 a:hover, .links_2 a:hover {
 .contacts {
     align-items: center;
     padding: 85px 0 35px;
-
 }
 
 footer {
@@ -211,265 +210,6 @@ footer {
     padding-left: 30px;
 }
 
-/*contacts_styles_begin (also in media)*/
-h4 {
-    font: bold 14px "Roboto Slab", serif;
-    margin-top: 0;
-}
-
-.shadow:after {
-    content: "";
-    display: block;
-    height: 8px;
-    background: linear-gradient(to bottom, rgba(31,31,86,0.1) 0%,rgba(31,31,86,0) 100%);
-}
-
-
-.Contacts div  {
-    font-size: 14px;
-    vertical-align: top;
-}
-
-.Contacts ._tel {
-    font: bold 18px/30px Arial, sans-serif;
-}
-
-.office p:last-child {
-    text-decoration: underline;
-}
-
-.Contacts  div {
-    display: inline-block;
-    width: 25%;
-    min-width: 160px;
-}
-
-.Contacts:after {
-    content: "";
-    display: block;
-    height: 2px;
-    background: #f6f6f9;
-    margin-top: 20px;
-}
-.map-back {
-    padding: 35px 0;
-}
-
-.map {
-    width: 49%;
-    display: inline-block;
-
-}
-
-iframe {
-    border: none;
-    width: 100%;
-    height: 300px;
-}
-
-
-.name, .phone, .subject, textarea {
-    border: solid 1px #c5c5d4;
-    border-radius: 2px;
-    height: 40px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    font: italic 13px Arial, sans-serif;
-}
-
-
-.back {
-    float: right;
-    width: 49%;
-
-}
-.name {
-    width: 49%;
-}
-
-.phone {
-    float: right;
-    width: 49%;
-}
-.subject, textarea {
-    width: 100%;
-}
-
-textarea {
-    height: 110px;
-    padding-top: 15px;
-}
-
-.office, .consult {
-    padding: 0 5% 10px 0;
-}
-
-.Contacts .rekvizit {
-    width: 25%;
-    padding-left: 4%;
-}
-
-.submit, .news {
-    display: block;
-    float: left;
-}
-.news {
-    width: 56%;
-    font: normal 13px Arial, sans-serif;
-    color: #666666;
-    border: none;
-    padding-left: 0;
-    text-align: right;
-}
-
-.submit {
-    background: none;
-    border: solid 2px #fd8300;
-    padding: 8px 25px;
-    border-radius: 20px;
-    font: bold 14px Arial, sans-serif;
-    margin-right: 3%;
-}
-
-.submit:hover {
-    background-color: #fd8300;
-    color: #fff;
-}
-/*contacts_styles_end*/
-
-@media screen and (max-width: 1125px) {
-    .figures {
-        display: block;
-    }
-
-    .resize {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 940px) {
-    .orderCall {
-        padding-left: 40%;
-    }
-
-    .menu li {
-        padding-right: 10px;
-    }
-    .news {
-        float: right;
-        width: 50%;
-    }
-}
-
-
-@media screen and (max-width: 690px) {
-    /*hamburger menu and footer*/
-    .contacts {
-        padding: 65px 0 5px;
-    }
-
-    .contacts div {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .orderCall {
-        padding: 0;
-
-    }
-
-    nav {
-        position: relative;
-    }
-
-    .menu {
-        display: none;
-        padding-left: 0;
-        margin: 0;
-    }
-
-    .menu {
-        background-color: rgba(36, 36, 85, 0.8);
-        z-index: 2;
-        position: absolute;
-        top: 34px;
-        left: 0;
-    }
-
-    .menu li {
-        font: bold 30px/70px Arial, sans-serif;
-
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    #hamburger:checked ~ .menu {
-        display: block;
-        position: absolute;
-        top: 54px;
-        min-width: 280px;
-        padding-left: 15px;
-
-    }
-
-    .hamburger label {
-        display: inline-block;
-        width: 60px;
-        height: 50px;
-        cursor: pointer;
-        z-index: 2;
-    }
-
-    .hamburger label:before {
-        content: "";
-        position: absolute;
-        top: 18px;
-        left: 10px;
-        width: 1em;
-        height: 0.15em;
-        background: white;
-        box-shadow: 0 0.25em 0 0 white,
-        0 0.5em 0 0 white;
-        transform: scale(2);
-        z-index: 3;
-    }
-    .Contacts div{
-        width: 20%;
-    }
-    .office, .consult {
-        padding: 0 4% 10px 0;
-    }
-
-    .Contacts .rekvizit {
-        width: 30%;
-        padding-left: 0;
-    }
-    .map, .back {
-        width: 100%;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .contacts div {
-        margin: 0 auto;
-        float: none;
-        max-width: 100%;
-
-    }
-}
-@media screen and (max-width: 400px) {
-    .Contacts div, .Contacts .rekvizit, h3 {
-        padding-left: 22%;
-    }
-    .news {
-        width: 47%;
-        text-align: center;
-    }
-}
-
 .panel {
     background-color: #242455;
 }
@@ -480,7 +220,6 @@ textarea {
     padding: 10px 25px;
     border-radius: 20px;
     font: bold 16px Arial, sans-serif;
-
 }
 
 .orderCall input:hover {
@@ -502,11 +241,10 @@ textarea {
     color: #9999a6;
     text-align: center;
     font: normal 13px/45px Arial, sans-serif;
-
 }
-/*header-footer styles end*/
+/*header-footer styles*/
 
-/*main_styles*/
+/*main styles*/
 .proposal {
     text-align: center;
     background: url("../images/proposal.jpg") no-repeat;
@@ -693,43 +431,9 @@ aside > ul > li:last-child {
 aside > ul > li:nth-child(3):hover .hidden_list {
     display: block;
 }
+/*main styles*/
 
-@media screen and (max-width: 1125px) {
-    .main {
-        width: 100%;
-    }
-
-    aside {
-        float: none;
-        width: 100%;
-    }
-
-    aside > ul {
-        width: 100%;
-    }
-
-    aside > ul > li {
-        text-align: center;
-        padding: 16px 0;
-    }
-
-    .afters span:after {
-        left: 190px;
-    }
-
-    .afters:hover span:after {
-        left: 190px;
-    }
-
-    .hidden_list {
-        width: 100%;
-        box-sizing: border-box;
-        margin-left: 0;
-    }
-}
-/*main_styles*/
-
-/*price_styles*/
+/*price styles*/
 .price_h3 {
     font: bold 24px "Roboto Slab", serif;
     color: #24242b;
@@ -750,12 +454,6 @@ table {
     width: 100%;
     text-align: left;
     border-collapse: collapse;
-}
-
-@media screen and (max-width: 600px) {
-    .table {
-        overflow-x: scroll;
-    }
 }
 
 .table {
@@ -854,5 +552,305 @@ tbody tr td:last-child {
 .price_figures .price_p {
     font-size: 13px;
 }
-/*price_styles*/
+/*price styles*/
 
+/*contacts styles*/
+h4 {
+    font: bold 14px "Roboto Slab", serif;
+    margin-top: 0;
+}
+
+.shadow:after {
+    content: "";
+    display: block;
+    height: 8px;
+    background: linear-gradient(to bottom, rgba(31, 31, 86, 0.1) 0%, rgba(31, 31, 86, 0) 100%);
+}
+
+.Contacts div {
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.Contacts ._tel {
+    font: bold 18px/30px Arial, sans-serif;
+}
+
+.office p:last-child {
+    text-decoration: underline;
+}
+
+.Contacts div {
+    display: inline-block;
+    width: 25%;
+    min-width: 160px;
+}
+
+.Contacts:after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #f6f6f9;
+    margin-top: 20px;
+}
+
+.map-back {
+    padding: 35px 0;
+}
+
+.map {
+    width: 49%;
+    display: inline-block;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 300px;
+}
+
+.name, .phone, .subject, textarea {
+    border: solid 1px #c5c5d4;
+    border-radius: 2px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font: italic 13px Arial, sans-serif;
+}
+
+.back {
+    float: right;
+    width: 49%;
+}
+
+.name {
+    width: 49%;
+}
+
+.phone {
+    float: right;
+    width: 49%;
+}
+
+.subject, textarea {
+    width: 100%;
+}
+
+textarea {
+    height: 110px;
+    padding-top: 15px;
+}
+
+.office, .consult {
+    padding: 0 5% 10px 0;
+}
+
+.Contacts .rekvizit {
+    width: 25%;
+    padding-left: 4%;
+}
+
+.submit, .news {
+    display: block;
+    float: left;
+}
+
+.news {
+    width: 56%;
+    font: normal 13px Arial, sans-serif;
+    color: #666666;
+    border: none;
+    padding-left: 0;
+    text-align: right;
+}
+
+.submit {
+    background: none;
+    border: solid 2px #fd8300;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font: bold 14px Arial, sans-serif;
+    margin-right: 3%;
+}
+
+.submit:hover {
+    background-color: #fd8300;
+    color: #fff;
+}
+/*contacts styles*/
+
+/*medias*/
+@media screen and (max-width: 400px) {
+    .Contacts div, .Contacts .rekvizit, h3 {
+        padding-left: 22%;
+    }
+
+    .news {
+        width: 47%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contacts div {
+        margin: 0 auto;
+        float: none;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .table {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .contacts {
+        padding: 65px 0 5px;
+    }
+
+    .contacts div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .orderCall {
+        padding: 0;
+
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .menu {
+        display: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .menu {
+        background-color: rgba(36, 36, 85, 0.8);
+        z-index: 2;
+        position: absolute;
+        top: 34px;
+        left: 0;
+    }
+
+    .menu li {
+        font: bold 30px/70px Arial, sans-serif;
+    }
+    /*hamburger*/
+    .hamburger {
+        display: block;
+    }
+
+    #hamburger:checked ~ .menu {
+        display: block;
+        position: absolute;
+        top: 54px;
+        min-width: 280px;
+        padding-left: 15px;
+
+    }
+
+    .hamburger label {
+        display: inline-block;
+        width: 60px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .hamburger label:before {
+        content: "";
+        position: absolute;
+        top: 18px;
+        left: 10px;
+        width: 1em;
+        height: 0.15em;
+        background: white;
+        box-shadow: 0 0.25em 0 0 white,
+        0 0.5em 0 0 white;
+        transform: scale(2);
+        z-index: 3;
+    }
+    /*hamburger*/
+
+    .Contacts div {
+        width: 20%;
+    }
+
+    .office, .consult {
+        padding: 0 4% 10px 0;
+    }
+
+    .Contacts .rekvizit {
+        width: 30%;
+        padding-left: 0;
+    }
+
+    .map, .back {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .orderCall {
+        padding-left: 40%;
+    }
+
+    .menu li {
+        padding-right: 10px;
+    }
+
+    .news {
+        float: right;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    .figures {
+        display: block;
+    }
+
+    .resize {
+        width: 90%;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+    }
+
+    aside > ul {
+        width: 100%;
+    }
+
+    aside > ul > li {
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .afters span:after {
+        left: 190px;
+    }
+
+    .afters:hover span:after {
+        left: 190px;
+    }
+
+    .hidden_list {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+}
+/*medias*/
