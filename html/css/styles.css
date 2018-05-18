@@ -10,7 +10,6 @@
     font-style: normal;
 }
 
-
 body {
     font-family: "Arial", serif;
     margin: 0;
@@ -22,7 +21,13 @@ input, label, textarea {
 }
 
 p {
-    margin: 0
+    margin: 0;
+}
+
+span {
+    display: block;
+    width: 190px;
+    margin: 0 auto;
 }
 
 li {
@@ -624,7 +629,7 @@ aside li {
     position: relative;
     list-style: none;
     background: #e4e4ec;
-    padding: 16px 0;
+    padding: 16px 16px;
 }
 
 aside > ul > li:first-child {
@@ -649,7 +654,7 @@ aside > ul > li:last-child {
     color: #fff;
 }
 
-.afters:after {
+.afters span:after {
     content: "";
     position: absolute;
     display: block;
@@ -658,11 +663,11 @@ aside > ul > li:last-child {
     transform: rotate(45deg);
     width: 7px;
     height: 7px;
-    top: 20px;
-    left: 210px;
+    top: 4px;
+    left: 190px;
 }
 
-.afters:hover:after {
+.afters:hover span:after {
     content: "";
     position: absolute;
     border-top: 1px #fff solid;
@@ -670,14 +675,16 @@ aside > ul > li:last-child {
     width: 7px;
     height: 7px;
     transform: rotate(135deg);
-    top: 20px;
-    left: 210px;
+    top: 3px;
+    left: 190px;
 }
 
 .hidden_list {
     display: none;
     background-color: #e4e4ec;
-    padding: 0;
+    margin-top: 16px;
+    margin-bottom: -16px;
+    margin-left: -16px;
 }
 
 .hidden_list li {
@@ -690,11 +697,13 @@ aside > ul > li:last-child {
 
 aside > ul > li:nth-child(3):hover .hidden_list {
     display: block;
-    margin-top: 16px;
-    margin-bottom: -16px;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1125px) {
+    .main {
+        width: 100%;
+    }
+
     aside {
         float: none;
         width: 100%;
@@ -706,28 +715,27 @@ aside > ul > li:nth-child(3):hover .hidden_list {
 
     aside > ul > li {
         text-align: center;
+        padding: 16px 0;
     }
 
-    .afters:after {
-        left: 550px;
+    .afters span:after {
+        left: 190px;
     }
 
-    .afters:hover:after {
-        left: 550px;
+    .afters:hover span:after {
+        left: 190px;
     }
 
     .hidden_list {
         width: 100%;
         box-sizing: border-box;
+        margin-left: 0;
     }
 }
 
 /*main_styles*/
 
 /*price_styles*/
-.box_shadow {
-    box-shadow: 0x 5px 10px -6px rgba(50, 50, 50, 0.75);
-}
 
 .price_h3 {
     font: bold 24px "Roboto Slab", serif;
