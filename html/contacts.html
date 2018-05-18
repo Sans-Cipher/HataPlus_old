@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/main_styles.css">
-    <link rel="stylesheet" href="css/contacts_style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/hata_favicon.ico">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+		  initial-scale=1.0, maximum-scale=1.0,
+		  minimum-scale=1.0">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HataPlus - Наші контакти</title>
 </head>
 <body>
 <header class="clear shadow">
@@ -16,11 +20,11 @@
                     <input type="checkbox" id="hamburger" name="hamburger">
                     <label for="hamburger"></label>
                     <ul class="menu">
-                        <li><a href="#">Головна</a></li>
+                        <li><a href="index.html">Головна</a></li>
                         <li><a href="#">Про компанію</a></li>
-                        <li><a href="#">Наші будівлі</a></li>
+                        <li><a href="price.html">Наші будівлі</a></li>
                         <li><a href="#">Акції</a></li>
-                        <li><a href="#">Контакти</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
                     </ul>
                 </div>
             </nav>
@@ -55,7 +59,7 @@
     </div>
 </header>
 <div class="clear"></div>
-<div class="Contacts resize">
+<div class="Contacts resize clear">
     <h3>Контакти</h3>
     <div class="office">
         <h4>Наш офіс</h4>
@@ -82,11 +86,13 @@
 </div>
     <div class="clear resize map-back">
         <div class="map">
+
         <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2NuUn3dM5jHIY6FH3XZnkJiVRhqeAhR0
             &q=Space+Needle,@49.491393, 26.444195,16.25z
             &center=49.491393, 26.444195
             &zoom=15
             &maptype=roadmap" allowfullscreen>
+
         </iframe>
         </div>
     <div class="back">
@@ -103,8 +109,7 @@
             </label>
             <textarea placeholder="Текст"></textarea>
             <input class="submit" type="submit" value="Відправити">
-
-            <label class="news" for="news"><input id="news" type="checkbox">Я бажаю отримувати останні новини</label>
+            <label class="news"><input type="checkbox">Я бажаю отримувати останні новини</label>
         </form>
     </div>
 </div>
