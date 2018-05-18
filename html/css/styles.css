@@ -490,12 +490,7 @@ textarea {
 
 .Contacts > div {
     display: inline-block;
-    /*width: 30%;*/
 }
-/*
-.rekvizit {
-    width: 49%;
-}*/
 
 #map {
     height: 400px;
@@ -732,11 +727,9 @@ aside > ul > li:nth-child(3):hover .hidden_list {
         margin-left: 0;
     }
 }
-
 /*main_styles*/
 
 /*price_styles*/
-
 .price_h3 {
     font: bold 24px "Roboto Slab", serif;
     color: #24242b;
@@ -781,7 +774,7 @@ tbody {
     font: normal 14px "Arial", sans-serif;
 }
 
-tbody td {
+tbody tr:not(:first-child) td {
     border-top: 1px #cecedd solid;
 }
 
