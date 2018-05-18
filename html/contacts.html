@@ -55,7 +55,7 @@
     </div>
 </header>
 <div class="clear"></div>
-<div class="Contacts resize clear">
+<div class="Contacts resize">
     <h3>Контакти</h3>
     <div class="office">
         <h4>Наш офіс</h4>
@@ -80,11 +80,16 @@
             <p>Банк ХФ ПАТ КБ «ПРИВАТБАНК»</p>
     </div>
 </div>
-    <div class="clear resize">
+    <div class="clear resize map-back">
         <div class="map">
-        <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2NuUn3dM5jHIY6FH3XZnkJiVRhqeAhR0
-    &q=Space+Needle,@49.4093084,26.9507761,16.25z" allowfullscreen>
+        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2NuUn3dM5jHIY6FH3XZnkJiVRhqeAhR0
+            &q=Space+Needle,@49.491393, 26.444195,16.25z
+            &center=49.491393, 26.444195
+            &zoom=15
+            &maptype=roadmap" allowfullscreen>
+                <!--src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2NuUn3dM5jHIY6FH3XZnkJiVRhqeAhR0
+    &q=Space+Needle,@49.4093084,26.9507761,16.25z" allowfullscreen>-->
+
         </iframe>
   <!--      <script>
             function initMap() {
@@ -118,8 +123,8 @@
             </label>
             <textarea placeholder="Текст"></textarea>
             <input class="submit" type="submit" value="Відправити">
-            <input id="news" type="checkbox">
-            <label for="news">Я бажаю отримувати останні новини</label>
+
+            <label class="news" for="news"><input id="news" type="checkbox">Я бажаю отримувати останні новини</label>
         </form>
     </div>
 </div>
